@@ -24,3 +24,20 @@ if age > 20:
     print('si')
     if age == 21:
         print('supersi')
+
+
+
+#match
+
+comando= input('fai qualcosa: tra triangolo, quadrato e cerchio? ')
+
+match comando:
+    case 'triangolo':
+        print('pugno potente')
+    case 'quadrato':
+        print('pugno leggero')    
+    case 'cerchio':
+        print('calcio leggero')
+        #questo è il default
+    case _:
+        print('calcio pesante')

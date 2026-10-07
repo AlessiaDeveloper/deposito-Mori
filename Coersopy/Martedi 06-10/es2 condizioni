@@ -1,0 +1,22 @@
+lista1 = ['Bari', 'Milano', 'Torino']
+lista2 = [1, 2, 3]
+
+scelta= input('Quale lista vuoi usare?')
+scelta1 = 'città'
+scelta2 = 'numeri'
+azione = input('quale azione vuoi usare?')
+aggiungi = 'aggiungi'
+cancella= 'cancella'
+
+if scelta == scelta1 & azione == aggiungi:
+    lista1.append(input('aggiungi una città'))
+    if scelta == scelta1 & azione == cancella:
+        lista1.remove(input('quale parola vuoi cancellare'))
+    
+elif scelta == scelta2 & azione == aggiungi:
+    lista2.append(input('aggiungi un numero'))
+    if scelta == scelta2 & azione == cancella:
+        lista1.remove(input('quale numero vuoi cancellare'))
+    
+else: 
+    input('scelta non valida')
