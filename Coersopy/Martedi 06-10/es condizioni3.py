@@ -90,3 +90,5 @@ match eliminare:
         lista.remove(3)
     case _:
         print('scelta non valida')    
+        
+print('ciao')
