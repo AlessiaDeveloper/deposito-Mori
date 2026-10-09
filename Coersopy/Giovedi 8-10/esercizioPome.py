@@ -1,82 +1,59 @@
-# scelta = ""
+#es 1 
+def inserisciNumeroPositivo():
+    numero = int(input(' inserisci un numero : '))
 
-#la parte dei while poi me la rivedo
-#FUNZIONI
-    
-    
+    while numero <= 0:
+        numero = int(input('Inserisci un numero: '))
+  
+    return numero
     #es 2 RIUSCITO DA TRASFORMARE IN FUNZIONE ANCORA
 
-lista = []
 def creaLista():
-    primo = int(input('scegli un numero positivo '))
+    lista = []
+    primo = inserisciNumeroPositivo()
     for i in range(1, primo+1):
         lista.append(i)
-    print(lista)
-    
+    print('lista creata', lista)
+    return lista
 # if scelta == 1:
-creaLista()
+# creaLista()
     
-
-# while scelta != "stoppa":
-
-#     scelta = int(input("Scegli esercizio tra 1, 2,3, 4, 5 e 6 altrimenti scrivi stoppa"))
-
-  #es 1 while
-    # if scelta == 'uno':
-    #     print(1)
-        
-    #     check= True
-    #     def uno():
-    #         while nPos >= 0 :
-    #             nPos = int(input('scegli un numero positivo '))
-    #             check = False
-
-    #     uno()
     
+    #es 3 RIUSCITO 
 
-    
-    #es 3 RIUSCITO DA TRASFORMARE IN FUNZIONE ANCORA
-
-def sommaIPari(listas):
+def sommaIPari(listas: list):
     sommaPari = 0
     for i in listas:
+        #se l'iterabile diviso due non ha il resto cioè ha il resto = a zero
         if i % 2 == 0:
-                #allora fammi la somma
+            #aggiungi a somma pari l'iterabile
             sommaPari= sommaPari + i
         
     print(sommaPari)
     
-sommaIPari(lista)
+# sommaIPari(creaLista())
     
     #es 4 RIUSCITO DA TRASFORMARE IN FUNZIONE ANCORA
-def stampaIDispari(listas):    
+def stampaIDispari(listas: list):    
     for i in listas:
         if i % 2 == 1:
-            numeroD = i
-            print(numeroD)
+            print(i)
             
-stampaIDispari(lista)
+# stampaIDispari(creaLista())
         
     #es 5 usa un ciclo per vedere se un numero è Pari
     
-def checkPari():
-    
-    numero = int(input('inserisci un numero'))
-    if numero % 2 == 0:
-        print(True)
-    else:
-        print(False)
+def checkPari(num):
+    return num % 2 == 0
         
-checkPari()
         
-    #es 6 usa un ciclo for per i numeri pari della lista
+    #es 6 usa un ciclo for per stampare i numeri pari della lista
     
 def pariL(listaP):
     for i in listaP:
-        if i % 2 == 0:
+        if checkPari(i) == True:
             print(i)
             
-pariL(lista)
     
 #usa un if per determinare se la somma dei numeri della lista è un numero pari e stampa il risultato
 def SommaSuprema(listaRandom):
@@ -84,12 +61,36 @@ def SommaSuprema(listaRandom):
     for i in listaRandom:
         sommone = sommone + i
     
-    if (sommone % 2 == 0):
-        print('è PARI')
+    if checkPari(sommone):
+        print('la somma dei numeri è PARI')
     else:
-        print('è DISPARI')
+        print('la somma dei numeri è DISPARI')
+    print(sommone)
             
-SommaSuprema(lista)
 
     # if scelta != 'uno'and scelta != "due" and scelta != "tre" and scelta != "quattro" and scelta != "cinque" and scelta != "sei" and scelta != "stoppa":
     #     print("Apposto")    
+    
+menuAperto = True    
+while menuAperto:
+    scelta = input('vuoi fare un esercizio? se si rispondi con 1, 2, 3, 4, 5, 6, 7 altrimenti rispondi no: ')
+
+    match scelta:
+        case '1':
+            inserisciNumeroPositivo()
+        case '2':
+            creaLista()
+        case '3':
+            sommaIPari(creaLista())
+        case '4':
+            stampaIDispari(creaLista())
+        case '5':
+            checkPari(inserisciNumeroPositivo())
+        case '6':
+            pariL(creaLista())
+        case '7':
+            SommaSuprema(creaLista())
+        case 'no':
+            menuAperto = False
+        case _:
+            print('scelta non valida')    
