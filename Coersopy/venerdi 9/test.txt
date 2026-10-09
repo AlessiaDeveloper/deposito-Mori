@@ -1,0 +1,38 @@
+domanda 1
+
+python è un linguaggio di programmazione che è interpretato, cosa che lo rende più lento perché ha un interprete, che il linguaggio essendo ad alto livello( vuol dire che è molto simile al linguaggio umano) deve poi essere tradotto dall'interrete in linguaggio macchina. Orientato a oggetti non ricordo sinceramente, ma mi ricordo che è per via delle classi. E dinamicamente forte che vuol dire che può cambiare il tipo, ma non può mai rimanere senza il tipo
+
+DOmanda 2
+
+Una variabile è un contenitore per un valore  e si definisce così
+
+Nome della variabile = che è l'operatore di assegnazione, e il valore 
+es Charlie = 'Disco'
+Charlie è il nome della variabile, e gli stiamo assegnando il valore di tipo stringa che è Disco
+
+
+DOmanda 3
+
+Il controllo del flusso comprende due famiglie, quelle dei cicli e quelle dellle condizioni,  più una terza che sarebbe quella delle funzion
+i Cicli sono il while e il for nella famiglia dei cicli, e se il while si usa per fare dei cicli su elementi indeterminati, cioè tutte le volte che vogliamo, basta che soddisfi una condizione, il for è su elementi determinati, ad esempio con una lista di valori, si utilizza il for.
+Le condizioni servono per parlare con il programma e hanno l'if else che si usa prevalentemente con i numeri attraverso gli operatori di confronto, si può avere un solo if, infiniti elif e un solo else, che serve a uscire dal for in caso non troviamo una condizione soddisfatta dall'if e l'elif 
+mentre il match case si usa per le stringhe. puoi mettere tutti i match che vuoi, ma il default è importante, perché se la variabile che stiamo cercando che viene definita sopra il match, non incontra nessun match, allora il match case deve finire con il default caratterizzato dall'
+
+Domanda 4 
+
+Una funzione è una parte di codice che il programma può eseguir quando viene richiamata, e può essere eseguita anche in altri file, basta copiarla. Le funzioni possono essere con return e senza return.
+Il che vuol dire che ad esempio se non mettiamo il return quando la richiamiamo se dentro il corpo della fnzione c è un print( il terminale ci dirà il print), altrimenti col return se ad esempio facciamo una funzione somma che passa due parametri, a, b e nel corpo della funzione facciamo a + b 
+e facciamo il return di a + b 
+quando richiamiamo la funzione a questa dovremo intanto mettere i valori, che son stati richiesti come parametri. ma se vogliamo salvare il valore in una variabile faremo così
+risultatoSomma = somma(1+2) 
+e se printiamo risultatoSomma ci apparirà 3
+Comunque la funzione si definisce con def nome della funzione(parametro1, parametro2, ecc) sotto ci sta il corpo della funzione che eseguirà l'operazione. I parametri possono essere tutti quelli che vuoi e possono essere tipizzati tipo parametro1: int (in quel caso ci aspetiamo un intero) oppure possono non essere tipizzati
+
+
+Domanda 5
+
+il versionamento è il controllo del file attraverso tutte le sue modifiche. Github è uno strumento che ci permette di farlo con diciamo semplicità attraverso 
+la history e i changes. Oltre a fare in modo che più persone ad esempio lavorino sullo stesso codice. I comandi piu importanti sono git pull, che serve per pullare cioè prendere il codice che è stato 
+messo in precedenza (per evitare conflitti col merge) e pushare. Prima il pull e poi il push che serve per mettere il tuo codice dopo che lo hai committato.
+Il fetch è quello che serve per prendere tutte le versioni vecchie e rimetterti in pari.
+Git hub desktop, è uno strumento che collegato al tuo repository ti permette di avere in automatico  ogni volta che salvi il tuo file su vscode tutti il file creati e modificati di recente, con il summary lo pushi e quindi lo metti online, che lo rende visibile se la tua repository è open, 
