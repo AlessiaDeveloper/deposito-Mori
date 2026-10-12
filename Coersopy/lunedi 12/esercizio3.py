@@ -17,22 +17,28 @@ class ContoCorrente:
             self.saldo = saldo
             saldo= 0
 
+
         def deposita(self):
+            
             nuovoSaldo = int(input('inserisci un saldo'))
+            #se il nuovosaldo è minore o uguale a self saldo che sta già a 0 allora da errore
             if nuovoSaldo <= self.saldo:
                 print('errore, inserisci importo superiore a 0 euro')
             else:
+                #altrimenti dai al saldo il valore del nuovo saldo, cioè la cifra inserita nell'input
                 self.saldo = nuovoSaldo
                 return self.saldo
         
         def preleva(self):
             prelievo_saldo = int(input('inserisci una cifra da prelevare'))
-            if self.saldo <= prelievo_saldo:
+            #se il saldo è minore di quello che vuoi prelevare allora dai errore
+            if self.saldo < prelievo_saldo:
                 print('errore, saldo insufficiente')
             else:
+                #se è tutto regolare allora fai la sottrazione del prelievo dal saldo
                 self.saldo = self.saldo - prelievo_saldo
                 return self.saldo
-        
+        #qua stampi il saldo
         def stampa_saldo(self):
             print('il saldo di', self.intestatario, 'è di Euro', self.saldo)
 
