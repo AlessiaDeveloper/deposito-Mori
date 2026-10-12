@@ -52,6 +52,8 @@ print(Obj.saldo)
 print(Obj.stampa_saldo())
 scelta = ""
 
+#questo è il mio while che dovevo fittare all'esercizio
+
 # menuAperto = True    
 # while menuAperto:
 #     scelta = input('vuoi fare un esercizio? se si rispondi con 1, 2, 3, 4, 5, 6, 7 altrimenti rispondi no: ')
