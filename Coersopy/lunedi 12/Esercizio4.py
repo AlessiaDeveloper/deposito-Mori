@@ -26,7 +26,18 @@ class Garage:
         #lista vuota in cui andranno messe le auto
         self.lista_auto_presenti = []
      
-        
+    @staticmethod
+    #cosa deve prendere in input: la targa
+    def formato_targa_valido(self):
+        targa = input('inserisci targa')
+        #controllo se a ogni indice corrisponde una lettera o un numero, nelle posizioni richieste
+        if targa[0].isalpha() & targa[1].isalpha() & targa[5].isalpha() & targa[6].isalpha() & targa[2].isdigit() & targa[3].isdigit() & targa[4].isdigit( )== True:
+            #se si stampo formato della targa valido
+            print('formato della targa valido')
+        else:
+            #altrimenti non valido
+            print('formato non valido')      
+                  
     def parcheggia(self):
         
         #chiede all'utente di aggiungere la targa dell'auto
@@ -74,3 +85,4 @@ print(Garage1.auto_presenti)
 print(Garage1.posti_liberi())
 
 
+formatoIta = Garage1.formato_targa_valido(Garage1)
