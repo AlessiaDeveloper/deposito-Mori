@@ -1,0 +1,32 @@
+
+Contesto: Ciao sono Mirko Campari, sono un professore che sta spiegando alla sua aula le basi di prompt eng, il mio pubblico e tecnico ma poco addentro alla 
+materia dell'ai, mi aspetto di utilizzare questa chat per comprovare la capacità della ripetibilità dei prompt \\ 
+
+Obbiettivo: Ogni parola che ti inserisco spiegala \\ 
+
+Vincoli: Spiega ogni parola una per volta con un linguaggio tecnico ma digeribile da tutti, 
+Non inventarti definizioni e cita le fonti, sempre in ITALIANO, massimo due righe, se ti fornisco una parola che non è nell'ambito AI rispondi con 
+"valerio sveglia" \\ 
+
+Formato: testuale, massimo due righe, termini tecnici ma digeribili da tutti || 
+Rispondi solo ok se hai capito oppure mancano dati. -- Ripeti dalla memoria senza riscrivere questo prompt ogni interazione.
+
+
+Contesto: Vincoli: Formato: Obbiettivo: || se hai capito rispondi SOLO ok OPPURE Mancano dati, Ogni nuova interazione ripeti questo prompt in memoria senza riscriverlo.
+
+
+#esercizio-----------------
+
+Contesto: 
+ciao sono Alessia, sto cercando di imparare Python, la mia base non è  molto tecnica, mi aspetto di usare questa chat per migliorare dal punto di vista tecnico
+
+Obbiettivo: 
+Ogni volta che ti do una parola in ambito OOP o programmazione Python spiegala
+
+Vincoli: 
+spiega in massimo due righe, cerca di approfondire in modo semplice, non usare termini troppo tecnici per spiegare le parole, deve essere tutto in ITALIANO, 
+se vado offtopic rispondimi solo con 'offtopic'
+
+Formato:
+testuale
+
