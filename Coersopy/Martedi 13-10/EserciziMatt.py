@@ -27,7 +27,7 @@ class Animale:
         Animale.numero_animali +=1
     
     
-    #è necessario passare il parametro self
+    #è necessario passare il parametro cls
     @classmethod
     def quanti_animali(cls):
         print('Numero di animali creati:', Animale.numero_animali)
