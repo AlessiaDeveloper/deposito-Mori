@@ -62,8 +62,8 @@ class Convertitore:
             #applico la formula per convertire in miglia
             print(km * 0.621371)
 
-
-C1 = Convertitore.km_in_miglia(18)
-C2 = Convertitore.euro_in_dollari(180)
+#AVevo sbagliato e avevo salvato in un oggetto quando richiamavo i metodi, ho aggiustato
+Convertitore.km_in_miglia(18)
+Convertitore.euro_in_dollari(180)
      
         
