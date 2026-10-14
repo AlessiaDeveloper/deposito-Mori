@@ -188,7 +188,7 @@ class Professore(Persona):
         return materia_insegnata
         
     def presentazione(self):
-        self.get_materia_insegnata()
+        # self.get_materia_insegnata()
         print(f"Sono {self.nome}, eta {self.eta} e la materia che insegno è {self.__materia_insegnata} ") 
         
         
