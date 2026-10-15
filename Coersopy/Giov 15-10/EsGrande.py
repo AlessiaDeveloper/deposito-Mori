@@ -162,3 +162,37 @@ class Motocarro(VeicoloTrasporto):
 
 camion1 = Camion("Miao", 100, 35, 10)
 camion1.costo_manutenzione()   
+
+# 3. Classe GestoreFlotta
+# Crea una classe che gestisca un elenco di veicoli:
+# Attributi
+# • veicoli : lista di oggetti derivati da VeicoloTrasporto.
+# Metodi
+# • aggiungi_veicolo(veicolo)
+# • rimuovi_veicolo(targa)
+# • costo_totale_manutenzione():
+# • Somma dei costi di manutenzione di tutti i veicoli (polimorfismo sugli oggetti astratti).
+# • stampa_veicoli():
+# • Elenca targa, tipo e carico attuale.
+
+
+class GestoreFlotta:
+    
+    listaVeicoli = [] #classe vuota
+    
+    def aggiungi_veicolo():
+        veicolo = input('aggiungi un veicolo tra camion')
+        if veicolo == camion
+    
+    def rimuovi_veicolo(targa):
+        pass
+    
+    def costo_totale_manutenzione():
+        pass
+    
+    def sommaManutenzioneVeicoli():
+        pass
+    def stampaVeicoli():
+        pass
+    def mostraInfo():
+        pass
