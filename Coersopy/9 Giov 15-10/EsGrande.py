@@ -50,8 +50,8 @@ from abc import ABC,abstractmethod
 
 
 class VeicoloTrasporto(ABC):
-     
     
+
     def __init__(self, _targa:'str',_peso_massimo:int,_carico_attuale:int):
         self._targa = _targa
         self._peso_massimo = _peso_massimo

@@ -1,0 +1,50 @@
+Cos'è Una classe? cos'è un oggetto? A che serve il self? spiegali
+
+una classe è un blueprint di un oggetto, ed è un tipo di dato non primitivo. Un oggetto è un istanza di una classe che ottiene i metodi e i parametri del 
+classe padre. Un instanza di classe veicolo è un oggetto di tipo veicolo. SIa la classe che  l'oggetto hanno la maiuscola davanti.
+Il self è il parametro che viene passato all'oggetto, per richiamare i propri parametri(per dire che sono i parametri dell'oggetto ad esempio in caso di modifica quindi da modificare)
+
+Cos'è l'ereditarietà? Come funziona? Spiegala 
+
+L'ereditarietà è una delle regole fondamentali della programmazione a oggetti. E' la capacità di generare da un elemento padre un elemento figlio e quindi dare via a una gerarchia.
+ Al suo interno ci sono tre cose da ricordare. 
+una è la logica: ereditarietà multipla. cioè una classe figlio può avere più padri e una classse padre può avere più figli.
+una è la strategia: cioè la sovrascrittura dei metodi. in pratica quando una classe padre genera un figlio questa eredita sia il costruttore dal padre che i suoi metodi e i suoi attributi. In più può modificarli.
+l'altra è il metodo super() che serve per evocare il padre per attivare ad esempio il suo costruttore, oppure i suoi metodi. questo in caso, se il metodo che ha ce l ha solo un padre. perché se no è meglio scrivere il nome di quel padre specifico di cui vogliamo prendere il metodo.
+
+L'incapsulamento è una delle tre regole fondamentali dell'OOP. E' la capacità di nascondere elementi nel codice o dal codice. 
+Ci sono i parametri protetti caratterizzati dall'underscore singolo davanti all'attributo che servono per dire al programmatore
+ che quando questi parametri passano al figlio devono essere privati quindi non sono realmente protetti nella classe padre. I privati invece caratterizzati 
+ dal doppio underscore davanti all'attributo non sono 'apribili' fin quando non si utilizza il getter, funzione obbligatoria insieme al setter, 
+ in caso di attributi privati. Il getter serve per prendere il contenuto dell'attributo privato, il setter per modificarlo.
+
+ Il polimorfismo è un'altra regola fondamentale ed è la capacità di un elemento di cambiare forma e o comportamento senza variare cos è per il sistema.
+ c è il duck typing che in pratica permette a due classi che non son imparentate tra loro di effettuare un azione come ad esempio un metodo, se queste hanno un metodo comune.
+  E ognuna delle classi eseguirà il corpo della propria funzione
+C è la sovrascrittura dei metodi che è quello che fa quando in una classe padre c è un metodo generico e quando viene passata alla classe figlio, il metodo generico viene modificato
+ per la forma più idonea al figlio ad esempio classe Animale(è la casse padre), hai il metodo fai verso generico, la classe figlio che è gatto quando userà il metodo generico potrà miagolare  
+ modificando il corpo della funzione in questo caso verso generico
+
+Cosa sono le funzioni ? Perché incarnano passivamente il concetto di astrazione? Cos'è l'astrazione nella programmazione ?
+
+le funzioni sono blocchi di codice che possono essere definiti da una parte ma possono essere evocati da un'altra (pure attraverso i moduli)
+oltre ciò finchè non vengono richiamate non si attivano. LA funzione è composta da il nome della funzione, i parametri che stanno dentro le 
+tonde e possono essere parametri tipizzati, o nrmali, e se ne si possono avere quanti ne si vuole, basta che quando richiamiamo la funzione gli passiamo i parametri richiesti nell'ordine richiesto, 
+e che abbiano il tipo richiesto in caso di parametro tipizzato. e dentro la funzione c è il corpo della funzione che può essere con il return, in caso vogliamo 
+salvarci il risultato dell'operazione che è avvenuta dentro la funzione. oppure col print che serve solo per stampare a schermo quel risultato.
+
+Il collegamento con l'astrazione è il fatto che l'astrazione è la possibilità di dividere il blocco di codice dal blocco di definizione.
+Nella pratica ci sono le classi astratte che sono praticamente delle classi padre che funzionano da blueprint, ma non possono avere istanze di quelle classi, però servono praticamente per i figli, per passargli gli attributi obbligatori 
+attraverso il costruttore o i metodi astratti che son sempre obbligatori, ma li contraddistingue il fatto che hanno il decoratore sopra @abstractmethod 
+
+from abc import ABC,abstractmethod questa è la riga di codice da passare nel file prima di poterli usare, abc è la libreria
+
+Cos'è il concetto di controllo di flusso? Quali famiglie ne fanno parte? Spiega gli elementi di queste famiglie teoricamente 
+(1 punto)
+Il controllo del flusso si divide in ripetitivo ( while e for) e d esclusivo( if else e match)
+Il ripetitivo permette iterare. Si usa il while per elementi indefiniti. Il while può essere anche booleano, perché puoi fare in modo che vada in loop finchè 
+non si fa una condizione specifica.. è necessario sia per il while normale sia per il while booleano avere una variabile. Nel caso del while 
+booleano basta che questa variabile sia impostato a True per far girare il loop per poi mettere nelle condizioni duscita False per far smettere di girare questo loop.
+Il for si usa per gli elementi definiti, ad esempio per iterare su una lista e quindi scorrere tutti i suoi elementi uno per uno.
+ Per i condizionali ci sono l'if l'elif e l'else che si usa prevalentemente con i numeri. C è solo solo un if, un solo else, e quanti elif vogliamo.
+ Invece il match case si usa per la ricerca di stringhe. si possono mettere quanti match case vogliamo. però ci deve essere solo un default, in caso la variabile che ricerchiamo non incontra nessuna di queste condizioni.
